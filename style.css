@@ -301,10 +301,14 @@ button {
     /* box-shadow: 5px 6px 10px RGBA(0, 0, 0, .2); */
 }
 
-button:active {
+button:hover {
     background-color: #664a88;
     box-shadow: inset 2px 2px 3px 3px #442b5b;
-    user-select: none;
+}
+
+button:active {
+    background-color: #664a88;
+    box-shadow: inset 2px 2px 3px 5px #442b5b;
 }
 
 /* yin yang image */
