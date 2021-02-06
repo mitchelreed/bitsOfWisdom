@@ -380,6 +380,10 @@ img {
     color: #aa8cd2;
 }
 
+.mobileNote {
+    display: none;
+}
+
 /* keyframe animations */
 
 @keyframes yinLoop {
@@ -442,26 +446,55 @@ img {
 @media (max-width: 800px) {
     h1 {
         position: absolute;
-        top: -60px;
-        transition: all .5s ease;
+        transition: all .2s ease;
     }
     button {
         position: absolute;
-        bottom: -40px;
-        transition: all .5s ease;
+        transition: all .2s ease;
     }
     .note {
         min-width: 300px;
         text-align: center;
     }
+    .quoteDisplay {
+        font-size: 1.8rem;
+    }
+    .bold {
+        font-size: 2rem;
+    }
 }
 
-/* colours */
-
-/* 
-light purple: #664a88
-dark purple:  #442b5b
-light orange: #ff8e71
-dark orange: #f58634 
-very light purple: #f6efff
-*/
+@media (max-width: 500px) {
+    h1 {
+        position: absolute;
+        transition: all .2s ease;
+        top: -80px;
+    }
+    button {
+        transition: all .2s ease;
+        bottom: -30px;
+    }
+    .secret {
+        width: 200px;
+    }
+    .note {
+        display: none;
+        text-align: center;
+    }
+    .quoteDisplay {
+        font-size: 1.5rem;
+    }
+    .bold {
+        font-size: 1.5rem;
+    }
+    .mobileNote {
+        display: block;
+        font-size: 1.3rem;
+        padding-bottom: 5px;
+        position: absolute;
+        bottom: 0;
+        font-size: 1.2rem;
+        font-family: 'Poppins', sans-serif;
+        color: #cdbce4;
+    }
+}

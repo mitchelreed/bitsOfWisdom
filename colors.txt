@@ -1,0 +1,10 @@
+
+/* colours */
+
+/* 
+light purple: #664a88
+dark purple:  #442b5b
+light orange: #ff8e71
+dark orange: #f58634 
+very light purple: #f6efff
+*/
