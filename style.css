@@ -266,6 +266,7 @@ body {
     justify-content: center;
     align-items: center;
     position: relative;
+    min-width: 300px;
     /* border: 2px solid red; */
 }
 
@@ -296,11 +297,11 @@ button {
     align-items: center;
     position: absolute;
     bottom: 10px;
-    transition: all .5s ease;
+    transition: all .2s ease;
     /* box-shadow: 5px 6px 10px RGBA(0, 0, 0, .2); */
 }
 
-button:active {
+button:active, button:focus {
     background-color: #664a88;
     box-shadow: inset 2px 2px 3px 3px #442b5b;
     user-select: none;
@@ -322,7 +323,7 @@ img {
     font-weight: 500;
     text-align: center;
     color: #ff8e71;
-    line-height: 1.5;
+    line-height: 1.2;
 }
 
 .quoteDisplay {
@@ -336,6 +337,7 @@ img {
     font-weight: 700;
     color: #f58634;
     transition: all .5s ease;
+    padding-top: 10px;
 }
 
 /* secret pop up */
@@ -441,14 +443,35 @@ img {
         opacity: 0%;
         transition: all .5s ease;
     }
+    h1 {
+        padding-top: 10px;
+        font-size: 3.5rem;
+    }
+    .quoteDisplay {
+        font-size: 1.5rem;
+    }
+    .bold {
+        font-size: 1.5rem;
+    }
 }
 
 @media (max-width: 800px) {
-    h1 {
+    button {
         position: absolute;
         transition: all .2s ease;
     }
-    button {
+    .flexContainer-2 {
+        height: 85%;
+        max-height: 600px;
+        max-width: 400px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        /* border: 2px solid red; */
+    }
+    h1 {
         position: absolute;
         transition: all .2s ease;
     }
@@ -468,11 +491,10 @@ img {
     h1 {
         position: absolute;
         transition: all .2s ease;
-        top: -80px;
+        font-size: 3.5rem;
     }
     button {
         transition: all .2s ease;
-        bottom: -30px;
     }
     .secret {
         width: 200px;
@@ -488,13 +510,25 @@ img {
         font-size: 1.5rem;
     }
     .mobileNote {
-        display: block;
+        display: inline-block;
         font-size: 1.3rem;
         padding-bottom: 5px;
+        padding-top: 10px;
         position: absolute;
-        bottom: 0;
+        bottom: -10%;
         font-size: 1.2rem;
         font-family: 'Poppins', sans-serif;
         color: #cdbce4;
+        transition: all .5s ease;
     }
+    .flexContainer-2 {
+        min-width: 250px;
+    }
+}
+
+@media (max-width: 450px) {
+    h1 {
+        font-size: 2.8rem;
+    }
+    .mobileNote {}
 }
